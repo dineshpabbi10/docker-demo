@@ -1,24 +1,13 @@
-# dad-jokes
+# Dad-Jokes with Docker
 
-## Project setup
-```
-npm install
-```
+## Run Project
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Without Docker
+* npm install
+* npm run start
+* Open localhost:8080 in browser
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### With Docker
+* docker pull dineshpabbi10/vue-demo:v1
+* docker run -p 4000:8080 --name vue-demo dineshpabbi10/vue-demo:v1
+* Open localhost:4000 in browser
